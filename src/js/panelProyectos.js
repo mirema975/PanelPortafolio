@@ -3,7 +3,7 @@ window.onload = () => {
 }
 
 async function cargarProyectos() {
-        const apiProyectos = await fetch('http://127.0.0.1:8080/api/proyecto', {
+        const apiProyectos = await fetch('http://190.138.132.45:8080/api/proyecto', {
           method: 'GET'
         });
 
@@ -30,7 +30,7 @@ async function cargarProyectos() {
 }
 
 async function eliminarProyecto(id){
-    const rawResponse = await fetch(`http://127.0.0.1:8080/api/proyecto/${id}`, {
+    const rawResponse = await fetch(`http://190.138.132.45:8080/api/proyecto/${id}`, {
     method: 'DELETE'
     });
 
