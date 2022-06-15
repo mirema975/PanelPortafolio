@@ -3,7 +3,7 @@ window.onload = () => {
 }
 
 async function cargarProyectos() {
-        const apiProyectos = await fetch('https://190.138.132.45:8081/api/proyecto', {
+        const apiProyectos = await fetch('https://api.emamir.site:8443/api/proyecto', {
           method: 'GET'
         });
 
@@ -30,7 +30,7 @@ async function cargarProyectos() {
 }
 
 async function eliminarProyecto(id){
-    const rawResponse = await fetch(`https://190.138.132.45:8081/api/proyecto/${id}`, {
+    const rawResponse = await fetch(`https://api.emamir.site:8443/api/proyecto/${id}`, {
     method: 'DELETE'
     });
 

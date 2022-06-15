@@ -6,7 +6,7 @@ async function agregarProyecto() {
     proyecto.repositorio = document.getElementById('input__repositorio').value;
     proyecto.web = document.getElementById('input__web').value;
 
-    let enviar = await fetch ('https://190.138.132.45:8081/api/proyecto', {
+    let enviar = await fetch ('https://api.emamir.site:8443/api/proyecto', {
         method: 'POST',
         headers: {
             'Accept': 'application/json',
