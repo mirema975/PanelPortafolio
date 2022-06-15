@@ -6,7 +6,7 @@ async function agregarProyecto() {
     proyecto.repositorio = document.getElementById('input__repositorio').value;
     proyecto.web = document.getElementById('input__web').value;
 
-    let enviar = await fetch ('http://127.0.0.1:8080/api/proyecto', {
+    let enviar = await fetch ('https://190.138.132.45:8081/api/proyecto', {
         method: 'POST',
         headers: {
             'Accept': 'application/json',
